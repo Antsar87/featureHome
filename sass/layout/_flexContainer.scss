@@ -1,6 +1,11 @@
 .flexContainer {
   display: flex;
 
+  &--slider{
+    & > div {
+    }
+  }
+
   &__box {
     flex: 1;
   }

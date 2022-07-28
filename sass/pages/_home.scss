@@ -131,8 +131,15 @@
 }
 
 .aliados {
+  position: relative;
+
+  &__square {
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+  }
 
   &__img {
-    height: 7rem;
+    height: 8rem;
   }
 }

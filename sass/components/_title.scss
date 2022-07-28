@@ -1,0 +1,17 @@
+.title {
+  position: relative;
+
+  &::after {
+    content: '';
+
+    background: $cBlueDark;
+
+    margin-top: 3rem;
+
+    position: absolute;
+    width: 4rem;
+    height: .3rem;
+
+    border-radius: 2rem;
+  }
+}

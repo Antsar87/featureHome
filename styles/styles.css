@@ -229,6 +229,14 @@ html {
   color: #385499;
 }
 
+.c-blueDarker {
+  color: #33345c;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
 .sm-size {
   font-size: 1.2rem;
 }
@@ -274,7 +282,7 @@ html {
   z-index: 1000;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
   background-color: #506fc5;
   --state-open: scale(1);
   --state-close: scale(0);
@@ -391,23 +399,18 @@ html {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(-500%);
   }
 }
 .slider {
-  overflow: hidden;
   position: relative;
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
   position: absolute;
-  width: 200px;
-  z-index: 2;
 }
 .slider::after {
   right: 0;
@@ -419,9 +422,23 @@ html {
   top: 0;
 }
 .slider .slide-track {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: 3500px;
+  animation: scroll 60s linear infinite;
+}
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.title {
+  position: relative;
+}
+.title::after {
+  content: "";
+  background: #385499;
+  margin-top: 3rem;
+  position: absolute;
+  width: 4rem;
+  height: 0.3rem;
+  border-radius: 2rem;
 }
 
 .flexContainer {
@@ -563,8 +580,16 @@ html {
   width: 35%;
 }
 
+.aliados {
+  position: relative;
+}
+.aliados__square {
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+}
 .aliados__img {
-  height: 7rem;
+  height: 8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
