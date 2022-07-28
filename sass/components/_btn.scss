@@ -27,6 +27,16 @@
     border: 0.2rem solid $cNeutral;
   }
 
+  &--purple{
+    font-size: $smaller-size;
+
+    padding: 1rem 2rem;
+    
+    color: $cSecondaryDynamic;
+    
+    border-color: $cSecondaryDynamic;
+  }
+
   &--raidus-small {
     border-radius: .5rem;
   }

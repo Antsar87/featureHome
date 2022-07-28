@@ -1,13 +1,13 @@
 $animationSpeed: 60s;
 
 // Animation
-@keyframes scroll {
+@keyframes esliando {
 	0% { transform:translateX(100%);  }
 	100% { transform:translateX(-500%);  }
 }
 
 // Styling
-.slider {
+.esliador {
   position: relative;
 
   &::before,
@@ -27,10 +27,10 @@ $animationSpeed: 60s;
     top: 0;
   }
 
-  .slide-track {
+  .esliador-track {
     // width: calc(250px * 14);
 
-    animation: scroll $animationSpeed linear infinite;
+    animation: esliando $animationSpeed linear infinite;
 
     &:hover {
       animation-play-state: paused;

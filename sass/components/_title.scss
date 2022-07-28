@@ -6,12 +6,33 @@
 
     background: $cBlueDark;
 
-    margin-top: 3rem;
-
     position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     width: 4rem;
     height: .3rem;
 
     border-radius: 2rem;
+  }
+
+  &--small-mrg {
+    &::after {
+      top: unset;
+      bottom:-1.5rem;
+    }
+  }
+
+  &--black {
+    &::after {
+      background: $cBlack;
+    }
+  }
+
+  &--white {
+    &::after {
+      background: $cWhite;
+    }
   }
 }

@@ -21,7 +21,7 @@
     background: url('https://res.cloudinary.com/protalento/image/upload/v1658502293/Website/Home/Desktop/background_home_hero_uuttwu.png')
       no-repeat bottom center / cover;
 
-    @include for-size("tablet-portrait-up"){
+    @include for-size('tablet-portrait-up') {
       bottom: 0;
     }
   }
@@ -140,6 +140,20 @@
   }
 
   &__img {
-    height: 8rem;
+    height: 10rem;
+    width: 15rem;
+  }
+}
+
+.programas {
+  position: relative;
+  
+  background: $cSecondaryDynamic;
+
+  &__square {
+    position: absolute;
+
+    left: 10rem;
+    bottom: -10rem;
   }
 }
