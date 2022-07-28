@@ -1,0 +1,11 @@
+.flexContainer {
+  display: flex;
+
+  &__box {
+    flex: 1;
+  }
+
+  &__box-2 {
+    flex: 2;
+  }
+}

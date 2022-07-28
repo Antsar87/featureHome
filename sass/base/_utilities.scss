@@ -1,0 +1,208 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+// text align
+.txt-center {
+  text-align: center;
+}
+
+// display
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+@include for-size('tablet-landscape-up') {
+  .d-block-landscape {
+    display: block;
+  }
+
+  .d-none-landscape {
+    display: none;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+// width
+.w-100 {
+  width: 100%;
+}
+
+// margin
+.mT-1 {
+  margin-top: 1rem;
+}
+
+.mT-2 {
+  margin-top: 2rem;
+}
+
+.mT-3 {
+  margin-top: 3rem;
+}
+
+.mT-4 {
+  margin-top: 4rem;
+}
+
+.mT-5 {
+  margin-top: 5rem;
+}
+
+.mT-10 {
+  margin-top: 10rem;
+}
+
+// padding
+.pX-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.pX-3 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.pY-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pY-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pY-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pY-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+//background
+.bg-white {
+  background: $cWhite;
+}
+
+.bg-purple {
+  background: $cPurple;
+}
+
+.bg-blue {
+  background: $cBlue;
+}
+
+.bg-blueDark {
+  background: $cSecondaryDynamic;
+}
+// color
+.cRed {
+  color: $cRed;
+}
+
+.c-white {
+  color: $cWhite;
+}
+
+.c-gray {
+  color: $cGray;
+}
+
+.c-yellow {
+  color: $cPrimaryDynamic;
+}
+
+.c-blue {
+  color: $cSecondaryDynamic;
+}
+
+.c-blueLight {
+  color: $cBlueLight;
+}
+
+.c-blueDark {
+  color: $cBlueDark;
+}
+
+// font-size
+.sm-size {
+  font-size: $sm-size;
+}
+
+.smaller-size {
+  font-size: $smaller-size;
+}
+
+.medium-size {
+  font-size: $medium-size;
+}
+
+.medium-big-size {
+  font-size: $medium-big-size;
+}
+
+.medium-bigger-size {
+  font-size: $medium-bigger-size;
+}
+
+// font-family
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+// line height
+.line-height-md {
+  line-height: 1.4em;
+}
+
+// box shadow
+.boxShadow {
+  box-shadow: 0px 4px 15px 10px #0000000a;
+}
+
+// radius
+.raidus-small {
+  border-radius: 1rem;
+}
+
+.radius-smaller {
+  border-radius: 0.8rem;
+}
