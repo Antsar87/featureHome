@@ -13,8 +13,40 @@
     }
   }
 
+  &--map {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
   &--autoColumns {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 
+  &--2-columns {
+    grid-template-columns: repeat(2, minmax(auto, 20rem));
+
+    @include for-size('tablet-landscape-up') {
+      grid-template-columns: repeat(4, minmax(auto, 20rem));
+    }
+  }
+
+  &--footer {
+    row-gap: 5rem;
+    
+    @include for-size('phone-only') {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    @include for-size('tablet-landscape-up') {
+      grid-template-columns: 27rem auto auto;
+    }
+  }
+
+  &__widder {
+    @include for-size('phone-only') {
+      grid-column: span 3 / auto;
+    }
+    @include for-size('tablet-landscape-up') {
+      grid-column: unset;
+    }
+  }
 }

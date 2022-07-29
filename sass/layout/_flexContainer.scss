@@ -1,6 +1,16 @@
 .flexContainer {
   display: flex;
 
+  &--column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &--row-portrait {
+    @include for-size("tablet-portrait-up"){
+      flex-direction: row;
+    }
+  }
+
   &--slider{
     & > div {
       min-width: 25rem;

@@ -157,3 +157,17 @@
     bottom: -10rem;
   }
 }
+
+.location {
+  position: relative;
+
+  &__square {
+    position: absolute;
+    right: -3rem;
+    bottom: 45rem;
+  }
+}
+
+.postulate {
+  background: $cBlueDark;
+}
