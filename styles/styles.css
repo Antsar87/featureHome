@@ -442,8 +442,12 @@ html {
     display: none;
   }
 }
+.nav .hamburguer button {
+  cursor: pointer;
+}
 .nav .hamburguer span {
   position: absolute;
+  transition: transform 1s;
 }
 .nav .hamburguer__open {
   transform: var(--state-open);

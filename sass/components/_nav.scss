@@ -95,8 +95,13 @@
       display: none;
     }
 
+    button {
+      cursor: pointer;
+    }
+
     span {
       position: absolute;
+      transition: transform 1s;
     }
 
     &__open {
