@@ -6,7 +6,7 @@
   &--header {
     row-gap: 10rem;
 
-    @include for-size('tablet-landscape-up') {
+    @include for-size('desktop-up') {
       grid-template-columns: 65rem 45rem;
 
       row-gap: unset;

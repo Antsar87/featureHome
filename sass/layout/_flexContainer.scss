@@ -5,6 +5,10 @@
     flex-direction: column-reverse;
   }
 
+  &--column {
+    flex-direction: column;
+  }
+
   &--row-portrait {
     @include for-size("tablet-portrait-up"){
       flex-direction: row;

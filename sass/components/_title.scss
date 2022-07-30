@@ -7,20 +7,26 @@
     background: $cBlueDark;
 
     position: absolute;
-    top: 130%;
+    bottom: -1.5rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     width: 4rem;
-    height: .3rem;
+    height: 0.3rem;
 
     border-radius: 2rem;
+  }
+
+  &--begin {
+    &::after {
+      left: 2rem;
+    }
   }
 
   &--small-mrg {
     &::after {
       top: unset;
-      bottom:-1.5rem;
+      bottom: -1.5rem;
     }
   }
 

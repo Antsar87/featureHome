@@ -61,7 +61,7 @@
         left: unset;
       }
 
-      @include for-size('tablet-landscape-up') {
+      @include for-size('desktop-up') {
         bottom: -100%;
       }
     }
@@ -160,6 +160,8 @@
 
 .location {
   position: relative;
+
+  padding: 0 5rem;
 
   &__square {
     position: absolute;
