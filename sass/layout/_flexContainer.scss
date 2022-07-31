@@ -15,6 +15,12 @@
     }
   }
 
+  &--row-landscape {
+    @include for-size("1100px"){
+      flex-direction: row;
+    }
+  }
+
   &--slider{
     & > div {
       min-width: 25rem;
