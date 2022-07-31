@@ -121,22 +121,61 @@ const text = [
     Decidir por prioridad e importancia para crecer.
     `,
   ],
+  [
+    `
+    ¿Te has quedado sin palabras ante esa pregunta ambigua en la entrevista? ¿No sabes en dónde empezar a buscar vacantes? ¿Sientes que tu hoja de vida no refleja todo tu potencial?
+    `,
+    `
+    En este curso aprenderás:
+    `,
+    `
+    Herramientas laborales (comunicación, planeación y organización).
+    `,
+    `
+    Hoja de vida y perfil de Linkedin
+    `,
+    `
+    Canales de búsqueda de trabajo
+    `,
+  ],
+  [
+    `
+    Ya has sido seleccionado en el trabajo de tus sueños, ahora el reto es quedarte, enfrentar los retos laborales, personales y encontrar ese punto de equilibrio que te permitirá seguir creciendo.
+    `,
+    `
+    En este curso aprenderás:
+    `,
+    `
+    Autogestión​
+    `,
+    `
+    Tolerancia a la frustración​
+    `,
+    `
+    Capital social y redes​
+    `,
+    `
+    Manejo del tiempo​
+    `,
+    `
+    Propósito de vida​
+    `,
+  ],
 ];
 
 li.forEach((item, idx) => {
   item.id = idx;
 
   item.addEventListener('click', () => {
-    
     li.forEach((item) => item.classList.remove('bg-blueLight'));
-    
+
     if (item.id === idx.toString()) item.classList.add('bg-blueLight');
 
     changeInfo(idx);
   });
 });
 
-changeInfo(0)
+changeInfo(0);
 
 // change info
 function changeInfo(id) {

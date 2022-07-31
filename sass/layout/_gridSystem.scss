@@ -35,7 +35,6 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
 
-
   &--2-columns {
     grid-template-columns: repeat(2, minmax(auto, 20rem));
 
@@ -50,7 +49,7 @@
     }
   }
 
-  &--2-columns-variante{
+  &--2-columns-variante {
     @include for-size('tablet-landscape-up') {
       grid-template-columns: repeat(2, 40rem);
     }
@@ -105,6 +104,12 @@
 
         // object-fit: cover;
       }
+    }
+  }
+
+  &--3-column-variation {
+    @include for-size('1330px') {
+      grid-template-columns: 1fr 2fr 1fr;
     }
   }
 }
