@@ -873,6 +873,11 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (min-width: 900px) {
+  .gridSystem--2-columns-variante {
+    grid-template-columns: repeat(2, 40rem);
+  }
+}
 .gridSystem--footer {
   row-gap: 5rem;
 }
@@ -910,6 +915,16 @@ html {
   .gridSystem--match {
     grid-template-columns: repeat(3, 30rem);
   }
+}
+.gridSystem--rows {
+  grid-template-rows: 10rem;
+}
+.gridSystem--rows div {
+  width: 100%;
+  height: 100%;
+}
+.gridSystem--rows div img {
+  height: 100%;
 }
 
 .footer__box {
@@ -1086,6 +1101,13 @@ html {
   margin: 0 auto;
   margin-top: 10rem;
   z-index: 1;
+}
+.logos img {
+  height: 4rem;
+  object-fit: cover;
+}
+.logos h2 {
+  margin-top: 2rem;
 }
 
 @media (min-width: 900px) {
