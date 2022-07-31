@@ -302,6 +302,10 @@ html {
   background: #c3d6f9;
 }
 
+.bg-graylight {
+  background: #f2f6fa;
+}
+
 .shape-circle {
   overflow: hidden;
   height: 7rem;
@@ -464,6 +468,22 @@ html {
     background: unset;
     gap: 10rem;
   }
+}
+.nav__ul a {
+  text-decoration: none;
+}
+.nav__link-programas {
+  display: none;
+  position: absolute;
+  left: -15rem;
+  border-radius: 2rem;
+  width: 40rem;
+}
+.nav__link-btn {
+  position: relative;
+}
+.nav__link-btn:hover .nav__link-programas {
+  display: block;
 }
 .nav__link {
   font-size: 1.6rem;
@@ -1058,6 +1078,20 @@ html {
 
 .postulate {
   background: #385499;
+}
+
+.logos {
+  position: relative;
+  max-width: 110rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .desarrolladoras {
+    margin-top: -4%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

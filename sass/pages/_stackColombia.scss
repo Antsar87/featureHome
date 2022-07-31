@@ -1,0 +1,14 @@
+.logos {
+  position: relative;
+  max-width: 110rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+
+  z-index: 1;
+}
+
+.desarrolladoras {
+  @include for-size('tablet-landscape-up') {
+    margin-top: -4%;
+  }
+}

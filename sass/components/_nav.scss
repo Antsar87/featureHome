@@ -68,6 +68,28 @@
       background: unset;
       gap: 10rem;
     }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__link-programas {
+    display: none;
+    position: absolute;
+    left: -15rem;
+    
+    border-radius: 2rem;
+    width: 40rem;
+  }
+
+  &__link-btn {
+    position: relative;
+    &:hover {
+      .nav__link-programas {
+        display: block;
+      }
+    }
   }
 
   &__link {
