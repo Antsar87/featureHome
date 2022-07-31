@@ -185,8 +185,32 @@ Crea tu primer software de forma rápida y escalable.`,
   [
     `
     Crearás tu software, desarrollarás proyectos en la práctica y trabajarás en equipo.
+    `,
+  ],
+  [
     `
-  ]
+    Comienza tu viaje creando contenidos web con Html
+    `,
+    `
+    ¡Haz que tu página web destaque! Aplicaremos CSS para diseñar y maquetar el contenido html. ¡Da vida a tu sitio! Haz tu sitio dinámico con el uso de JavaScript.
+    `,
+  ],
+  [
+    `
+    Diseño de base de datos NoSQL Aprende a almacenar datos y a generar experiencia de usuario con MERN.
+    `,
+    `
+    Crearás aplicaciones, un mini sitio web, una red social a escala en la que los usuarios puedan comunicarse en tiempo real o un e-commerce.
+    `,
+    `
+     Aprenderás a crear las funciones de un chat en tiempo real ¡No es tan fácil como parece!
+    `,
+  ],
+  [
+    `
+    Crearás tu software, desarrollarás proyectos en la práctica y trabajarás en equipo.
+    `
+  ],
 ];
 
 li.forEach((item, idx) => {
