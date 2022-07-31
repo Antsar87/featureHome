@@ -59,6 +59,12 @@ const afiliados = {
     `,
     url: "https://res.cloudinary.com/protalento/image/upload/v1658502371/Website/Home/Desktop/logo-color-dark_2x_1_x84ffx.png"
   },
+  dojo: {
+    title: "Coding Dojo",
+    content: "Coding Dojo se ha transformado en la Academia EdTech más relevante a nivel global, a 10 años de su fundación en Silicon Valley y con más de 10 mil casos de éxito de graduados en el mundo. En América Latina contamos con alumnos y ex alumnos de Chile, Colombia, Perú, Ecuador, Uruguay y México. ",
+    url: "https://res.cloudinary.com/protalento/image/upload/v1658861077/Website/Convocatorias/pictures/Logo-celeste_1_mljipn.svg"
+  }
+
 };
 
 const container = document.querySelector('.afiliados__container');

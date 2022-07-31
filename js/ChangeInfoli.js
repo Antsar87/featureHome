@@ -161,6 +161,32 @@ const text = [
     Propósito de vida​
     `,
   ],
+  [
+    `
+    Comienza tu viaje creando contenidos web con Html
+    `,
+    `
+    ¡Haz que tu página web destaque! Aplicaremos CSS para diseñar y maquetar el contenido html. ¡Da vida a tu sitio! Haz tu sitio dinámico con el uso de JavaScript.
+    `,
+  ],
+  [
+    ` Programación orientada a objetos en Python.
+Crea tu primer software de forma rápida y escalable.`,
+
+    `Bases de datos relacionales, Frameworks y patrones de diseño de Python MVC.`,
+    `Al igual que en un entorno de trabajo real, aprende a crear aplicaciones para escalarlas fácilmente y colaborar con otros desarrolladores. Lograrás almacenar datos de forma segura y generar la experiencia de usuario.`,
+
+    `Podrás crear una versión a escala de una experiencia de compra en línea, con funciones de pago y carrito de compras.`,
+
+    `Crea una herramienta de recopilación de información automatizada que pueda escanear y extraer datos de las interfaces del sitio web.`,
+
+    `Cada sitio necesita un inicio de sesión, ¿verdad? Te mostraremos cómo crear esta función fundamental que utilizan todos los sitios web.`,
+  ],
+  [
+    `
+    Crearás tu software, desarrollarás proyectos en la práctica y trabajarás en equipo.
+    `
+  ]
 ];
 
 li.forEach((item, idx) => {
@@ -174,8 +200,6 @@ li.forEach((item, idx) => {
     changeInfo(idx);
   });
 });
-
-changeInfo(0);
 
 // change info
 function changeInfo(id) {
