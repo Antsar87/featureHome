@@ -209,7 +209,27 @@ Crea tu primer software de forma rápida y escalable.`,
   [
     `
     Crearás tu software, desarrollarás proyectos en la práctica y trabajarás en equipo.
+    `,
+  ],
+  [
     `
+    Aprenderás los fundamentos de Python y la Ciencia de Datos. Manipulación, carga, limpieza y comprensión de datos. También te introduciremos en el aprendizaje automático y estadísticas experimentando con datos reales.
+    `,
+    `
+    Concluirás con un proyecto para mostrar tus conocimientos.
+    `,
+  ],
+  [
+    `¿Qué es el aprendizaje automático y por qué deberías usar Python Scikit-Learn? `,
+
+    `Aprenderás sobre una gran cantidad de algoritmos, cómo medirlos, maximizar su rendimiento, agruparlos, sus hiperparámetros, fortalezas y debilidades.`,
+
+    `Concluirás con un proyecto para mostrar tus conocimientos.`,
+  ],
+  [
+    ` Qué es el aprendizaje no supervisado y cuáles son sus aplicaciones.  Algoritmos de aumento de gradiente y competencias de Kaggle. También trabajarás SQL con Python.`,
+
+    `Aprenderás todo sobre Deep Learning: redes neuronales recurrentes (RNN) y redes neuronales convolucionales (CNN) y concluirás con un proyecto.`,
   ],
 ];
 
