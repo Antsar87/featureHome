@@ -28,7 +28,18 @@
 
   &--bg-none {
     &::after {
-      background: unset;
+      position: absolute;
+      top: 50%;
+      left: 65%;
+      right: 0;
+      bottom: -8rem;
+
+      @include for-size("desktop-up"){
+        top: 0;
+      }
+      
+      border-top-left-radius:5rem ;
+      background: url(https://res.cloudinary.com/protalento/image/upload/v1659385121/Website/faltantes/Rectangle_1036_hyttd7.png) no-repeat left center / cover;
     }
   }
 

@@ -1083,7 +1083,18 @@ html {
   }
 }
 .header--bg-none::after {
-  background: unset;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  right: 0;
+  bottom: -8rem;
+  border-top-left-radius: 5rem;
+  background: url(https://res.cloudinary.com/protalento/image/upload/v1659385121/Website/faltantes/Rectangle_1036_hyttd7.png) no-repeat left center/cover;
+}
+@media (min-width: 1200px) {
+  .header--bg-none::after {
+    top: 0;
+  }
 }
 .header__content {
   font-size: 1.8rem;
