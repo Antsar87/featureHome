@@ -1,11 +1,19 @@
 .carusel {
+  max-width: 110rem;
+  margin-right: auto;
+  margin-left: auto;
+
   &__title {
     min-height: 3.5rem;
   }
 
+  &__img {
+    width: 100%;
+  }
+
   .slick-track {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   %arrow {

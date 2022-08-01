@@ -10,20 +10,21 @@
   }
 
   &--row-portrait {
-    @include for-size("tablet-portrait-up"){
+    @include for-size('tablet-portrait-up') {
       flex-direction: row;
     }
   }
 
   &--row-landscape {
-    @include for-size("1100px"){
+    @include for-size('1100px') {
       flex-direction: row;
     }
   }
 
-  &--slider{
+  &--slider {
     & > div {
-      min-width: 25rem;
+      flex: 1;
+      min-width: 40rem;
     }
   }
 

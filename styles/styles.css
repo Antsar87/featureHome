@@ -326,7 +326,7 @@ html {
 }
 
 .c-gray {
-  color: #cbd6e2;
+  color: #828282;
 }
 
 .c-yellow {
@@ -586,43 +586,20 @@ html {
   background: #fff;
 }
 
-@keyframes esliando {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-300%);
-  }
+.carusel {
+  max-width: 110rem;
+  margin-right: auto;
+  margin-left: auto;
 }
-.esliador {
-  position: relative;
-}
-.esliador::before, .esliador::after {
-  content: "";
-  position: absolute;
-}
-.esliador::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.esliador::before {
-  left: 0;
-  top: 0;
-}
-.esliador .esliador-track {
-  animation: esliando 20s linear infinite;
-}
-.esliador .esliador-track:hover {
-  animation-play-state: paused;
-}
-
 .carusel__title {
   min-height: 3.5rem;
 }
+.carusel__img {
+  width: 100%;
+}
 .carusel .slick-track {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .carusel .slick-next:before, .carusel .slick-prev:before {
   font-family: "Nunito", sans-serif;
@@ -826,7 +803,8 @@ html {
   }
 }
 .flexContainer--slider > div {
-  min-width: 25rem;
+  flex: 1;
+  min-width: 40rem;
 }
 .flexContainer__box {
   flex: 1;
@@ -1060,7 +1038,7 @@ html {
 .header__input {
   padding: 1rem 1.5rem;
   background: #f2f6fa;
-  border: 1px solid #cbd6e2;
+  border: 1px solid #828282;
   border-radius: 0.5rem;
 }
 .header__input::placeholder {
@@ -1079,8 +1057,18 @@ html {
   left: 20rem;
 }
 .aliados__img {
-  height: 10rem;
-  width: 15rem;
+  max-height: 7rem;
+}
+.aliados .customer-logos .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.aliados .customer-logos .slick-slide img {
+  display: unset;
+}
+.aliados__box {
+  text-align: center;
 }
 
 .programas {
