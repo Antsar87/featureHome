@@ -22,3 +22,11 @@
     margin-top: -4%;
   }
 }
+
+.nuestroaAliados {
+  &__content {
+    img {
+      min-width: 30rem;
+    }
+  }
+}

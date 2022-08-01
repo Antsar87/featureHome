@@ -1030,6 +1030,19 @@ html {
 .gridSystem--rows div img {
   height: 100%;
 }
+.gridSystem--autoVariation {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 600px) {
+  .gridSystem--autoVariation {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .gridSystem--autoVariation {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
 @media (min-width: 1330px) {
   .gridSystem--3-column-variation {
     grid-template-columns: 1fr 2fr 1fr;
@@ -1246,6 +1259,10 @@ html {
   .desarrolladoras {
     margin-top: -4%;
   }
+}
+
+.nuestroaAliados__content img {
+  min-width: 30rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

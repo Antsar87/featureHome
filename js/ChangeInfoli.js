@@ -243,6 +243,8 @@ li.forEach((item, idx) => {
 
     changeInfo(idx);
   });
+
+  changeInfo(0)
 });
 
 // change info

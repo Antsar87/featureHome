@@ -75,15 +75,14 @@ afiliadosBox.forEach((item) => {
   item.addEventListener('click', () => {
     const { url, title, content } = afiliados[item.id];
     container.innerHTML = `
-    <div class="flexContainer__box">
+    <div>
     <img
       src="${url}"
       alt=""
-      class="w-100"
     />
   </div>
 
-  <div class="flexContainer__box">
+  <div>
     <h3
       class="title title--begin medium-bigger-size c-yellow medium-size"
     >
