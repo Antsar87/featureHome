@@ -643,9 +643,11 @@ html {
 }
 .map__square {
   position: absolute;
-  right: -10rem;
-  bottom: -10rem;
+  right: -9rem;
+  bottom: 0;
   z-index: -1;
+  height: 20rem;
+  width: 20rem;
 }
 .map__img {
   width: 100%;
