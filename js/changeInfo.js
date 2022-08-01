@@ -45,7 +45,7 @@ const information = [
     title:
       'PROtalento me dio la seguridad y apoyo que necesitaba para despegar mi carrera.',
     img: 'images/duvanVilladiego.png',
-    name: 'Jorge Mario Salazar',
+    name: 'Duvan Andrés Villadiego',
     ruta: 'Al inicio de la ruta',
     trabajo: 'Cientifico de Datos en',
     lugar: 'Endava',
@@ -106,7 +106,7 @@ function placeInformation(id) {
                ${ruta}
               </h3>
 
-              <h2 class="sm-size line-height-md fw-600 mT-2">
+              <h2 class="sm-size line-height-md fw-600 c-blueDarker mT-2">
                 ${profesion}
               </h2>
             </div>
@@ -124,7 +124,7 @@ function placeInformation(id) {
             <li class="mT-4">
               <h2 class="small-size c-blueDark">${name}</h2>
             </li>
-            <li class="sm-size mT-1">
+            <li class="sm-size c-blueDark mT-1">
               <p>${trabajo} <span class="c-yellow">${lugar}</span></p>
             </li>
           </ul>

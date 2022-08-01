@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 1rem 2rem;
 
-  background-color: $cMain;
+  background-color: #4267cd;
 
   --state-open: scale(1);
   --state-close: scale(0);
@@ -49,16 +49,17 @@
   &__ul {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
 
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+
     gap: 5rem;
 
-    background-color: $cMain;
+    background-color: #4267cd;
 
     list-style: none;
     transform: var(--links);
@@ -81,10 +82,10 @@
   &__link-programas {
     display: none;
     position: absolute;
-    left: -15rem;
-    
+    left: -10rem;
+
     border-radius: 2rem;
-    width: 40rem;
+    width: 25rem;
   }
 
   &__link-btn {

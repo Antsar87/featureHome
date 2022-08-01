@@ -60,6 +60,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  position: relative;
+}
+
 html {
   font-family: "proxima-nova", sans-serif;
   font-weight: 500;
@@ -80,6 +84,7 @@ html {
 }
 
 .box__li,
+.industrias__box,
 .programas__box,
 .afiliados__box {
   cursor: pointer;
@@ -209,6 +214,10 @@ html {
 
 .mT-15 {
   margin-top: 15rem;
+}
+
+.pXY-mini {
+  padding: 0.5rem 1rem;
 }
 
 .pT-5 {
@@ -357,6 +366,10 @@ html {
   font-weight: 600;
 }
 
+.mini-size {
+  font-size: 0.8rem;
+}
+
 .sm-size {
   font-size: 1.2rem;
 }
@@ -415,7 +428,7 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
-  background-color: #506fc5;
+  background-color: #4267cd;
   --state-open: scale(1);
   --state-close: scale(0);
   --links: translate(100%);
@@ -455,14 +468,14 @@ html {
 .nav__ul {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   gap: 5rem;
-  background-color: #506fc5;
+  background-color: #4267cd;
   list-style: none;
   transform: var(--links);
   transition: transform 1s;
@@ -482,9 +495,9 @@ html {
 .nav__link-programas {
   display: none;
   position: absolute;
-  left: -15rem;
+  left: -10rem;
   border-radius: 2rem;
-  width: 40rem;
+  width: 25rem;
 }
 .nav__link-btn {
   position: relative;
@@ -702,7 +715,18 @@ html {
 .industrias__box--main {
   margin-right: auto;
   margin-left: auto;
+  position: relative;
   max-width: 95rem;
+}
+.industrias__box--main::after {
+  content: "";
+  position: absolute;
+  right: 5rem;
+  top: 10rem;
+  z-index: -1;
+  background: url(https://res.cloudinary.com/protalento/image/upload/v1659325522/Website/faltantes/The_World_s_Oceans_A_gubq6t.png) no-repeat;
+  height: 10rem;
+  width: 10rem;
 }
 .industrias__box--2 {
   align-self: flex-end;
@@ -740,7 +764,7 @@ html {
     margin-top: 25%;
   }
   .industrias__box--5 {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 5%;
   }
   .industrias__box--6 {
@@ -768,12 +792,17 @@ html {
 .industrias__avatar.activo .industrias__img {
   opacity: 0;
 }
+@media (min-width: 900px) {
+  .industrias__main-box {
+    max-height: 20rem;
+  }
+}
 .industrias__content-box {
   display: flex;
   align-items: center;
   height: 100%;
   padding-left: 1rem;
-  background: gray;
+  background: #e3edff;
   opacity: 0;
   transition: opacity 1s;
 }
@@ -781,6 +810,73 @@ html {
   position: absolute;
   width: 100%;
   transition: opacity 1s;
+}
+
+.contact-widget {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 1000;
+  cursor: pointer;
+}
+.contact-widget .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 48px;
+  background-color: #a715ff;
+  box-shadow: 0px 10px 20px rgba(32, 33, 47, 0.2);
+  border-radius: 40px;
+}
+.contact-widget .button i {
+  color: white;
+  font-size: 4rem;
+}
+.contact-widget .button span {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 19px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.contact-widget .links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  width: 200px;
+  height: 136px;
+  margin-top: 10px;
+  margin-left: -120px;
+  padding: 7%;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.contact-widget .links-container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+}
+.contact-widget .links-container a i {
+  margin-right: 11.5px;
+  color: #385499;
+  font-size: 3.5rem;
+}
+.contact-widget .links-container a span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #20212f;
+}
+.contact-widget .hidden {
+  display: none;
 }
 
 .flexContainer {
@@ -834,6 +930,24 @@ html {
 @media (min-width: 900px) {
   .gridSystem--empresas {
     grid-template-columns: 41.9rem 60.1rem;
+  }
+}
+.gridSystem--porcentajes {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 25rem) {
+  .gridSystem--porcentajes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .gridSystem--porcentajes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .gridSystem--porcentajes {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .gridSystem--map {

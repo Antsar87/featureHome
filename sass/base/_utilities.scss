@@ -7,6 +7,7 @@
 
 // no time
 .box__li,
+.industrias__box,
 .programas__box,
 .afiliados__box {
   cursor: pointer;
@@ -141,7 +142,9 @@
   margin-top: 15rem;
 }
 // padding
-
+.pXY-mini {
+  padding: .5rem 1rem;
+}
 
 .pT-5 {
   padding-top: 5rem;
@@ -293,6 +296,10 @@
 }
 
 // font-size
+.mini-size {
+  font-size: $mini-size;
+}
+
 .sm-size {
   font-size: $sm-size;
 }

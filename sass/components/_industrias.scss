@@ -5,7 +5,23 @@
     &--main {
       margin-right: auto;
       margin-left: auto;
+
+      position: relative;
       max-width: 95rem;
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        right: 5rem;
+        top: 10rem;
+        z-index: -1;
+
+        background: url(https://res.cloudinary.com/protalento/image/upload/v1659325522/Website/faltantes/The_World_s_Oceans_A_gubq6t.png)
+          no-repeat;
+        height: 10rem;
+        width: 10rem;
+      }
     }
 
     &--2 {
@@ -19,17 +35,17 @@
     }
 
     &--4 {
-        align-self: flex-start;
+      align-self: flex-start;
       margin-top: 5rem;
     }
 
     &--5 {
-        margin-top: 5rem;
+      margin-top: 5rem;
     }
 
     &--6 {
-        align-self: flex-end;
-        
+      align-self: flex-end;
+
       margin-top: 5%;
       margin-left: 5%;
     }
@@ -55,7 +71,7 @@
       }
 
       &--5 {
-        margin-top: 5%;
+        margin-top: 10%;
         margin-left: 5%;
       }
 
@@ -94,6 +110,12 @@
     }
   }
 
+  &__main-box {
+    @include for-size('tablet-landscape-up') {
+      max-height: 20rem;
+    }
+  }
+
   &__content-box {
     display: flex;
     align-items: center;
@@ -102,7 +124,7 @@
 
     padding-left: 1rem;
 
-    background: gray;
+    background: $cBlueLighter;
 
     opacity: 0;
 
