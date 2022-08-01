@@ -154,9 +154,20 @@
   position: relative;
 
   &__square {
+    display: none;
+
     position: absolute;
-    top: 5rem;
-    left: 20rem;
+    top: 15%;
+    left: 5%;
+
+    @include for-size('phone-only') {
+      display: block;
+    }
+
+    @include for-size('tablet-landscape-up') {
+      top: 10%;
+      left: 15%;
+    }
   }
 
   &__img {
@@ -187,22 +198,20 @@
   background: $cSecondaryDynamic;
 
   &__square {
-    position: absolute;
+    display: none;
 
-    left: 10rem;
+    position: absolute;
     bottom: -10rem;
-  }
-}
 
-.location {
-  position: relative;
+    @include for-size('tablet-portrait-up') {
+      display: block;
 
-  padding: 0 5rem;
+      left: 2rem;
+    }
 
-  &__square {
-    position: absolute;
-    right: -3rem;
-    bottom: 45rem;
+    @include for-size('tablet-landscape-up') {
+      left: 5rem;
+    }
   }
 }
 

@@ -641,6 +641,12 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
+.map__square {
+  position: absolute;
+  right: -10rem;
+  bottom: -10rem;
+  z-index: -1;
+}
 .map__img {
   width: 100%;
 }
@@ -651,45 +657,42 @@ html {
 }
 .map__location--1 {
   top: 45%;
-  left: -5rem;
+  left: 10%;
 }
 .map__location--2 {
-  top: 2%;
-  left: 40%;
+  top: 30%;
+  left: 30%;
 }
 .map__location--3 {
-  left: 30%;
-  bottom: 10%;
+  left: 50%;
+  bottom: 45%;
 }
 .map__location--4 {
-  right: 30%;
-  bottom: 0;
+  top: 45%;
+  left: 30%;
 }
 .map__location--5 {
-  top: 50%;
-  right: -5rem;
+  bottom: 15%;
+  left: 13%;
 }
 .map__location--6 {
-  bottom: 25%;
+  top: 25%;
   right: 35%;
 }
 .map__location--7 {
-  top: 10%;
-  right: 40%;
-}
-.map__location--8 {
-  top: 15%;
-  right: 0;
+  bottom: 25%;
+  left: 10%;
 }
 .map__box {
   background: #fff;
+  border-radius: 1rem;
   position: relative;
   --logo: scale(1);
   --text: scale(0);
 }
 @media (min-width: 600px) {
   .map__box {
-    width: 10rem;
+    width: 15rem;
     height: 6.1rem;
   }
 }
@@ -1166,9 +1169,21 @@ html {
   position: relative;
 }
 .aliados__square {
+  display: none;
   position: absolute;
-  top: 5rem;
-  left: 20rem;
+  top: 15%;
+  left: 5%;
+}
+@media (min-width: 400px) {
+  .aliados__square {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .aliados__square {
+    top: 10%;
+    left: 15%;
+  }
 }
 .aliados__img {
   max-height: 7rem;
@@ -1190,19 +1205,20 @@ html {
   background: #3d1891;
 }
 .programas__square {
+  display: none;
   position: absolute;
-  left: 10rem;
   bottom: -10rem;
 }
-
-.location {
-  position: relative;
-  padding: 0 5rem;
+@media (min-width: 600px) {
+  .programas__square {
+    display: block;
+    left: 2rem;
+  }
 }
-.location__square {
-  position: absolute;
-  right: -3rem;
-  bottom: 45rem;
+@media (min-width: 900px) {
+  .programas__square {
+    left: 5rem;
+  }
 }
 
 .postulate {
